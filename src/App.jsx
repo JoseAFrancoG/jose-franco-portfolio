@@ -101,8 +101,8 @@ export default function App() {
 
   const projects = [
     {
-      id: 'techservice-erp',
-      title: 'TechService Pro ERP — Gestión Técnica e Inventario Transaccional',
+      id: 'tecnoservicio-pro-erp',
+      title: 'TecnoServicio Pro ERP — Gestión Técnica e Inventario Transaccional',
       subtitle: '.NET 8 Web API • React 18 & TypeScript • SQL Server • Clean Architecture',
       badge: 'Arquitectura Enterprise Full Stack',
       description:
@@ -115,14 +115,14 @@ export default function App() {
       ],
       architecture: {
         layers: [
-          { name: 'API Layer (.NET 8)', detail: 'Controladores REST delgados, middleware de excepciones global, autenticación JWT y documentación OpenAPI.' },
-          { name: 'Core Layer (Dominio)', detail: 'Entidades puras (ServiceOrder, InventoryItem, Customer), DTOs, interfaces de repositorio y validaciones de negocio.' },
-          { name: 'Infrastructure (Persistencia)', detail: 'DbContext de EF Core, mapeo relacional y ejecución optimizada de Stored Procedures en SQL Server.' },
+          { name: 'TecnoServicio.API (.NET 8)', detail: 'Controladores REST delgados, middleware de excepciones global, autenticación JWT y documentación OpenAPI.' },
+          { name: 'TecnoServicio.Core (Dominio)', detail: 'Entidades puras (ServiceOrder, InventoryItem, Customer), DTOs, interfaces de repositorio y validaciones de negocio.' },
+          { name: 'TecnoServicio.Infra (Persistencia)', detail: 'DbContext de EF Core, mapeo relacional y ejecución optimizada de Stored Procedures en SQL Server.' },
           { name: 'Frontend SPA (React + TypeScript)', detail: 'Estructura modular por features (órdenes, inventario, auth), estado reactivo y cliente Axios con interceptores.' }
         ],
         endpoints: [
           { method: 'POST', path: '/api/v1/auth/login', desc: 'Emisión de token JWT con Claims de Rol y expiración controlada' },
-          { method: 'GET', path: '/api/v1/dashboard/metrics', desc: 'Invoca el Stored Procedure sp_GetTechMetrics con KPIs consolidados' },
+          { method: 'GET', path: '/api/v1/dashboard/metrics', desc: 'Invoca el Stored Procedure sp_GetTecnoMetrics con KPIs consolidados' },
           { method: 'GET', path: '/api/v1/orders?status=&serial=', desc: 'Búsqueda paginada con filtrado dinámico por serie o cliente' },
           { method: 'POST', path: '/api/v1/orders/{id}/parts', desc: 'Transacción ACID: asignación y descuento atómico de repuestos' },
           { method: 'PATCH', path: '/api/v1/orders/{id}/status', desc: 'Transición de estado y registro de auditoría en OrderHistory' }
