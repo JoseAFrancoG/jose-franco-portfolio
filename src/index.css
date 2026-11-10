@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
